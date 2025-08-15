@@ -44,16 +44,24 @@
 
 ### Installation
 
+**Install from GitHub (Current Method):**
 ```bash
-# Install the guardrail system
-pip install claude-guardrail-system
+# Install directly from GitHub
+pip install git+https://github.com/Probioform/claude-guardrail-system.git
 
 # Setup configuration
-claude-guard setup
+python3 -m claude_guardrail.cli.main setup
 
 # For visual validation (optional)
 npm install playwright
 npx playwright install
+```
+
+**Install from PyPI (Coming Soon):**
+```bash
+# Will be available soon
+pip install claude-guardrail-system
+claude-guard setup
 ```
 
 ### Basic Usage
