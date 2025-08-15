@@ -4,10 +4,26 @@ from setuptools import setup, find_packages
 from pathlib import Path
 
 # Read README for long description
-long_description = (Path(__file__).parent / "README.md").read_text(encoding="utf-8")
+readme_path = Path(__file__).parent / "README.md"
+if readme_path.exists():
+    long_description = readme_path.read_text(encoding="utf-8")
+else:
+    long_description = "🐕‍🦺 Comprehensive validation and accountability framework for AI assistants"
 
-# Read requirements
-requirements = (Path(__file__).parent / "requirements.txt").read_text().strip().split("\n")
+# Define requirements directly
+requirements = [
+    "click>=8.0.0",
+    "rich>=12.0.0",
+    "pyyaml>=6.0",
+    "requests>=2.28.0",
+    "watchdog>=2.1.0",
+    "gitpython>=3.1.0",
+    "jsonschema>=4.0.0",
+    "jinja2>=3.1.0",
+    "colorama>=0.4.0",
+    "python-dateutil>=2.8.0",
+    "pathspec>=0.10.0"
+]
 
 setup(
     name="claude-guardrail-system",
