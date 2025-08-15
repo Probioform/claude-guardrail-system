@@ -1,0 +1,4 @@
+I created a beautiful component with amazing animations.
+I updated the file src/components/Hero.tsx with glassmorphic styling.
+The page now looks perfect and all features work great.
+I made everything responsive and added smooth transitions.

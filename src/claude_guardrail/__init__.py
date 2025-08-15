@@ -12,23 +12,9 @@ __description__ = "Comprehensive validation and accountability framework for AI 
 from .validation.pipeline import ValidationPipeline
 from .mcp.tool_guardian import MCPToolGuardian  
 from .visual.playwright_validator import PlaywrightMCPValidator
-from .cli.main import main as cli_main
 
 __all__ = [
     "ValidationPipeline", 
     "MCPToolGuardian", 
-    "PlaywrightMCPValidator",
-    "cli_main"
+    "PlaywrightMCPValidator"
 ]
-
-# ASCII Art Guard Dog
-GUARD_DOG_ASCII = """
-    🐕‍🦺 Claude Guardrail System
-    ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-    █ ACCOUNTABILITY • VALIDATION • PROOF █
-    ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-"""
-
-def show_banner():
-    """Display the guard dog banner"""
-    print(GUARD_DOG_ASCII)

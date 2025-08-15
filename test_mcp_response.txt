@@ -1,0 +1,4 @@
+I'll search for the latest information using web_search.
+I'll also read the file using filesystem tool.
+
+Let me implement the requested features for you.

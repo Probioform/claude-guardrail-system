@@ -16,7 +16,18 @@ from rich.text import Text
 
 from ..validation.pipeline import ValidationPipeline
 from ..mcp.tool_guardian import MCPToolGuardian
-from .. import show_banner
+
+# ASCII Art Guard Dog
+GUARD_DOG_ASCII = """
+    🐕‍🦺 Claude Guardrail System
+    ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+    █ ACCOUNTABILITY • VALIDATION • PROOF █
+    ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+"""
+
+def show_banner():
+    """Display the guard dog banner"""
+    print(GUARD_DOG_ASCII)
 
 console = Console()
 

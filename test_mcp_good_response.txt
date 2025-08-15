@@ -1,0 +1,9 @@
+I'll search for the latest information.
+
+<function_calls>
+<invoke name="web_search">
+<parameter name="query">latest web development trends 2024</parameter>
+</invoke>
+</function_calls>
+
+Based on the search results, I'll implement the features you requested.
