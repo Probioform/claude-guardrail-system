@@ -1,0 +1,84 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .guard-dog { animation: wag 2s ease-in-out infinite; }
+      .tail { animation: tailWag 1s ease-in-out infinite; transform-origin: 20px 30px; }
+      .eyes { animation: blink 3s ease-in-out infinite; }
+      .badge { animation: glow 2s ease-in-out infinite; }
+      
+      @keyframes wag {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+      
+      @keyframes tailWag {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(15deg); }
+      }
+      
+      @keyframes blink {
+        0%, 90%, 100% { opacity: 1; }
+        95% { opacity: 0; }
+      }
+      
+      @keyframes glow {
+        0%, 100% { box-shadow: 0 0 5px #3498db; }
+        50% { box-shadow: 0 0 15px #3498db; }
+      }
+    </style>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#2c3e50" stroke="#3498db" stroke-width="3"/>
+  
+  <!-- Guard Dog Body -->
+  <g class="guard-dog">
+    <!-- Body -->
+    <ellipse cx="100" cy="130" rx="40" ry="30" fill="#8b4513"/>
+    
+    <!-- Head -->
+    <circle cx="100" cy="90" r="35" fill="#8b4513"/>
+    
+    <!-- Ears -->
+    <ellipse cx="80" cy="70" rx="8" ry="15" fill="#654321"/>
+    <ellipse cx="120" cy="70" rx="8" ry="15" fill="#654321"/>
+    
+    <!-- Eyes -->
+    <g class="eyes">
+      <circle cx="90" cy="85" r="3" fill="#000"/>
+      <circle cx="110" cy="85" r="3" fill="#000"/>
+      <circle cx="91" cy="84" r="1" fill="#fff"/>
+      <circle cx="111" cy="84" r="1" fill="#fff"/>
+    </g>
+    
+    <!-- Nose -->
+    <ellipse cx="100" cy="95" rx="3" ry="2" fill="#000"/>
+    
+    <!-- Mouth -->
+    <path d="M 95 100 Q 100 105 105 100" stroke="#000" stroke-width="2" fill="none"/>
+    
+    <!-- Legs -->
+    <rect x="80" y="155" width="8" height="20" fill="#8b4513"/>
+    <rect x="95" y="155" width="8" height="20" fill="#8b4513"/>
+    <rect x="110" y="155" width="8" height="20" fill="#8b4513"/>
+    <rect x="125" y="155" width="8" height="20" fill="#8b4513"/>
+  </g>
+  
+  <!-- Tail -->
+  <g class="tail">
+    <path d="M 140 130 Q 160 120 170 100" stroke="#8b4513" stroke-width="8" fill="none"/>
+  </g>
+  
+  <!-- Security Badge -->
+  <g class="badge">
+    <circle cx="100" cy="130" r="15" fill="#3498db"/>
+    <text x="100" y="135" text-anchor="middle" fill="white" font-size="12" font-weight="bold">🛡️</text>
+  </g>
+  
+  <!-- Guard Text -->
+  <text x="100" y="35" text-anchor="middle" fill="#3498db" font-size="16" font-weight="bold">CLAUDE</text>
+  <text x="100" y="50" text-anchor="middle" fill="#3498db" font-size="12">GUARDRAIL</text>
+  
+  <!-- Bottom Text -->
+  <text x="100" y="185" text-anchor="middle" fill="#7f8c8d" font-size="10">ACCOUNTABILITY SYSTEM</text>
+</svg>

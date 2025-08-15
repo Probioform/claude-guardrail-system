@@ -1,0 +1,37 @@
+# Basic Claude Guardrail Configuration
+# Suitable for most development projects
+
+validation:
+  layers:
+    template_compliance:
+      enabled: true
+      blocking: true
+    instruction_alignment:
+      enabled: true
+      blocking: true
+    hallucination_detection:
+      enabled: true
+      blocking: true
+    reality_anchor:
+      enabled: true
+      blocking: false
+
+visual_validation:
+  enabled: false
+  dev_server_url: "http://localhost:3000"
+  require_screenshots: false
+
+mcp_integration:
+  require_visual_proof: false
+  validate_tool_claims: true
+  auto_screenshot: false
+
+evidence_collection:
+  save_screenshots: false
+  save_reports: true
+  retention_days: 7
+
+output:
+  format: "rich"
+  detailed_feedback: true
+  suggestions: true
